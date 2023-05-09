@@ -12,8 +12,7 @@
     "es6",
     "lib",
     "umd",
-    "types",
-    "src"
+    "types"
   ],
   "keywords": [
     "react",
