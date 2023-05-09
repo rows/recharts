@@ -250,6 +250,22 @@ export const WithXAxisPadding = {
     );
   },
 };
+
+export const WithTicksAtAnAngle = {
+  render: () => {
+    return (
+      <LineChart width={300} height={300} data={pageData}>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" padding={{ left: 30, right: 30 }} angle={45} tick={{ textAnchor: 'start' }} height={60} />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
+        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+      </LineChart>
+    );
+  },
+};
 export const WithReferenceLines = {
   render: () => {
     return (
